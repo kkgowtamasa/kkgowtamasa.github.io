@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <title>Favourite Books Online!</title>
+  <link rel='stylesheet' href='styles.css'>
+   <link rel="manifest" href="manifest.json">
+   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+<head>
+</head>
+<body>
+  <header class='topsection'>
+  <div id="container">
+    <div id="left"><img src='images/logo.png'></div>
+    <div id="right"><div class='audio'></div></div>
+    <div id="center"><input type='text' name='t1' id='t1' class='search'></div>
+    <div class='location_info' id="location"></div>
+	<div id="locstatus" class="online"></div>
+  </div>
+  </header>
+  <books></books>
+  <script src='jquery-1.11.3.min.js'></script>
+  <script src='app.js'></script>
+  <script src='locationapi.js'></script>
+</body>
+</html>
