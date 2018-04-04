@@ -1,4 +1,6 @@
 {
+ "gcm_sender_id": "482941778795",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID",
   "name": "News",
   "short_name": "News",
   "theme_color": "#2196f3",

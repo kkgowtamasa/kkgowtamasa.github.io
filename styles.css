@@ -54,14 +54,20 @@ books {
 }
 
 .search {
-	width: 96%;
+	width: 100%;
 	float:left;
     height: 30px;
     margin-bottom: 10px;
     font-size: 20px;
     font-family: monospace;
-    border: thin solid #3b87ea;
+    border: thin solid #ff00d0;
 	padding: 5px;
+	background-color: white;
+    background-image: url('images/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 40px;
+	fill: #0000ff;
 }
 .audio{
     position: relative;
@@ -72,5 +78,58 @@ books {
     height: 30px;
     cursor: pointer;
     padding-bottom: 10px;
+    background-repeat: no-repeat;
+	margin-top: 5px;
+}
+
+.topsection {
+	background-color: #c33c7c;
+    padding: 15px;
+}
+
+
+#container {
+    width:100%;
+    text-align:center;
+}
+
+#left {
+    float:left;
+    width:100px;
+}
+
+#center {
+    display: inline-block;
+    margin:0 auto;
+    width:85%;
+}
+
+#right {
+    float:right;
+    width:70px;
+}
+
+.location_info {
+	color:#e6ccdc;
+	text-align: right;
+	font-family: "Trebuchet MS";
+    font-size: 16pt;
+}
+
+.offline{
+    float: right;
+    background-image: url(images/offline.png);
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.online{
+    float: right;
+    background-image: url(images/online.png);
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
     background-repeat: no-repeat;
 }

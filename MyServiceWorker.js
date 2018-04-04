@@ -2,8 +2,14 @@
 //These elements helps to build static template
 const STATIC_ASSETS = [
  './',
+ './images/logo.png',
+ './images/online.png',
+ './images/offline.png',
+ './images/searchicon.png',
+ './images/icons/audio.svg',
  './styles.css',
  './app.js',
+ './location.js',
  './jquery-1.11.3.min.js',
  './defaultobject.json'
 ];
@@ -48,3 +54,19 @@ async function getNewBooksList(req) {
 		return cahcedData || await caches.match('./defaultobject.json');
 	}
 }
+
+
+/*
+* Notification Management
+*/
+self.addEventListener('push', function(event) {
+  console.log('Hey.. I got a Push Message.');
+
+  const title = 'Alert!';
+  const options = {
+    body: '<p>welcome</p><a href="#">Update</a>Hi, you got an update.',
+    icon: 'logo-square.png'
+  };
+
+  event.waitUntil(self.registration.showNotification(title, options));
+});
