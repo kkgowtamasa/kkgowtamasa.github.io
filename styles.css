@@ -140,4 +140,11 @@ a:hover {
     text-decoration: none;
 }
 
+@media screen and (max-width: 768px){
+
+  *[class*='col-xs']{
+    padding:10px;
+  }
+
+}
 
