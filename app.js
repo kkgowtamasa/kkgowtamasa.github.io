@@ -86,7 +86,7 @@ recognition.onspeechend = function() {
 
 var OneSignal = window.OneSignal || [];
   OneSignal.push(["init", {
-      appId: "e23b25f0-c0d2-4133-805f-9ee336b1480c",
+      appId: "250d2ce0-abc8-4614-955d-41aebd54a65b",
       autoRegister: false, /* Set to true to automatically prompt visitors */
       notifyButton: {
           enable: true, /* Set to false to hide */
