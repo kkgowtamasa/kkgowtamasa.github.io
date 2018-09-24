@@ -6,17 +6,17 @@
   $("#search").on('change', function(ev) {
     var country = $(this).val();
     var formattedCountryName = toTitleCase(country);
-    var uri = 'https://api.population.io/1.0/population/2018/'+formattedCountryName+'/18';
+    //var uri = 'https://api.population.io/1.0/population/2018/'+formattedCountryName+'/18';
+	var uri = 'https://www.googleapis.com/books/v1/volumes?q="'+formattedCountryName+'"';
     $.ajax({
       url: uri,
-	  headers: {'Access-Control-Allow-Origin': '*'},
       method : 'GET',
+	  headers : {'Accept' : '*/*'},
       success: function(data) {
-        var res = data[0];
+        var res = data.items[0].volumeInfo;
 		$('#main-card').show();
-        $('#male').html(res.males);
-        $('#female').html(res.females);
-        $('#total').html(res.total);
+        $('#male').html(data.items[0].volumeInfo.title);
+        $('#female').html(data.items[0].volumeInfo.subtitle);
       },
       error: function(errorInfo) {
         console.log(errorInfo);
