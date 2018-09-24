@@ -6,9 +6,10 @@
   $("#search").on('change', function(ev) {
     var country = $(this).val();
     var formattedCountryName = toTitleCase(country);
-    var uri = 'http://api.population.io/1.0/population/2018/'+formattedCountryName+'/18';
+    var uri = 'https://api.population.io/1.0/population/2018/'+formattedCountryName+'/18';
     $.ajax({
       url: uri,
+	  headers: {'Access-Control-Allow-Origin': '*'},
       method : 'GET',
       success: function(data) {
         var res = data[0];
