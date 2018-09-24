@@ -6,7 +6,7 @@
   $("#search").on('change', function(ev) {
     var country = $(this).val();
     var formattedCountryName = toTitleCase(country);
-    var uri = 'https://api.population.io/1.0/population/2018/'+formattedCountryName+'/18';
+    var uri = 'http://api.population.io/1.0/population/2018/'+formattedCountryName+'/18';
     $.ajax({
       url: uri,
       method : 'GET',
