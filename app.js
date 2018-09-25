@@ -15,9 +15,10 @@
       method : 'GET',
 	  headers : {'Accept' : '*/*'},
       success: function(data) {
-        var res = data.articles[0];
-        $('#male').html(res.title.title);
-        $('#female').html(res.description);
+        var res = data.articles;
+		$.each(res, function(index, articlesList){
+			$('#newsarticles').append('<div class="card"><img style="height:40%" src="'+articlesList.urlToImage+'"/><h2>'+articlesList.title+'</h2></div>');
+		});
       },
       error: function(errorInfo) {
         console.log(errorInfo);
