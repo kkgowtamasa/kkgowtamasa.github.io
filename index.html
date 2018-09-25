@@ -3,16 +3,33 @@
 <head>
 <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
 <title>World Population</title>
+<link rel="manifest" href="manifest.json"></link>
 <link rel="stylesheet" href='style.css' type="text/css"/>
+<script src="pwabuilder-sw-register.js"></script>
+
+
+<script src="https://github.com/boyofgreen/manUp.js"></script>
 </head>
 <body>
 <input type="text" id="search" placeholder="Search..">
-<div class="card" id="main-card">
-  <img src="img_avatar2.png" alt="Avatar">
-   <div class="container">
-    <div><span id="male">-</span></div>
-    <div><span id="female">-</span></div>
-  </div>
-<script type="text/javascript" src="app.js"></script>
+<a href="1.html">
+   <div class="card" id="main-card">
+     <img src="img_avatar2.png" alt="Avatar"/>
+	 <h1>Local News</h1>
+   </div>
+</a>
+<a href="2.html">
+   <div class="card" id="main-card">
+     <img src="img_avatar2.png" alt="Avatar"/>
+	 <h1>International</h1>
+   </div>
+</a>
+<a href="3.html">
+   <div class="card" id="main-card">
+     <img src="img_avatar2.png" alt="Avatar"/>
+	 <h1>Regional</h1>
+   </div>
+</a>
+
 </body>
 </html>

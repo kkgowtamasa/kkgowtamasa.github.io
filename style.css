@@ -25,6 +25,9 @@ input[type=text]:focus {
     transition: 0.3s;
     border-radius: 5px;
     display:table;
+    float: left;
+    padding:10px;
+    margin:10px;
 }
 
 .card:hover {
@@ -41,4 +44,14 @@ img {
 
 span {
     font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+a {
+    font-style:none;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    color:#268598;
+}
+a:hover {
+    font-style:none;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    color:#0ca5c3;
 }

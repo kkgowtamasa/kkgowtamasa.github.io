@@ -1,0 +1,16 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "World Population",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://kkgowtamasa.github.io/",
+    "short_name": "World Populatio",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": []
+}
